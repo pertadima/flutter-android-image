@@ -12,7 +12,7 @@ ENV FLUTTER_VERSION v1.15.17
 
 WORKDIR /
 
-RUN curl -O https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_$FLUTTER_VERSION.tar.xz
+RUN curl -O https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_$FLUTTER_VERSION.tar.gz
 RUN tar xf flutter_linux_$FLUTTER_VERSION.tar.xz
 ENV PATH $PATH:/flutter/bin/cache/dart-sdk/bin:/flutter/bin
 
