@@ -8,7 +8,6 @@ RUN apt-get -qq update && \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   RUN yes | sdk/tools/bin/sdkmanager --licenses && yes | sdk/tools/bin/sdkmanager --update
 
-
 ENV FLUTTER_VERSION v1.15.17 
 
 WORKDIR /
