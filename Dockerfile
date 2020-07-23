@@ -8,7 +8,7 @@ RUN apt-get -qq update && \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   RUN yes | sdk/tools/bin/sdkmanager --licenses && yes | sdk/tools/bin/sdkmanager --update
 
-ENV FLUTTER_VERSION v1.17.5-stable
+ENV FLUTTER_VERSION 1.17.5-stable
 
 WORKDIR /
 RUN curl -O https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_$FLUTTER_VERSION.tar.xz
